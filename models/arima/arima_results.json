@@ -1,0 +1,41 @@
+{
+  "temperature": {
+    "order": "auto",
+    "aic": null,
+    "bic": null,
+    "auto_arima_time": 57.265427589416504,
+    "training_time": 57.265427589416504,
+    "val_mse": 27.558307428170647,
+    "val_mae": 4.67357771602009,
+    "val_rmse": 5.249600692259426,
+    "test_mse": 41.8495598327453,
+    "test_mae": 5.328943029180326,
+    "test_rmse": 6.469123575318785
+  },
+  "relative_humidity": {
+    "order": "auto",
+    "aic": null,
+    "bic": null,
+    "auto_arima_time": 49.66056942939758,
+    "training_time": 49.66056942939758,
+    "val_mse": 1868.8092041015625,
+    "val_mae": 38.205692291259766,
+    "val_rmse": 43.2297259313723,
+    "test_mse": 590.4102783203125,
+    "test_mae": 20.77655601501465,
+    "test_rmse": 24.298359580850565
+  },
+  "wind_speed_10m (km/h)": {
+    "order": "auto",
+    "aic": null,
+    "bic": null,
+    "auto_arima_time": 7.456896543502808,
+    "training_time": 7.456896543502808,
+    "val_mse": 102.60132200000002,
+    "val_mae": 8.23386,
+    "val_rmse": 10.12923106657164,
+    "test_mse": 26.00494191287466,
+    "test_mae": 3.779777094119067,
+    "test_rmse": 5.099504084994408
+  }
+}

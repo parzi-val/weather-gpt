@@ -1,0 +1,84 @@
+{
+  "config": {
+    "data_path": "/content/Weather_Data_1980_2024(hourly).csv",
+    "models_dir": "/content/models",
+    "input_features": [
+      "temperature",
+      "relative_humidity",
+      "dew_point",
+      "wind_speed_10m (km/h)",
+      "pressure_msl (hPa)",
+      "cloud_cover (%)",
+      "vapour_pressure_deficit (kPa)"
+    ],
+    "target_variables": [
+      "temperature",
+      "relative_humidity",
+      "wind_speed_10m (km/h)"
+    ],
+    "input_window": 168,
+    "output_window": 72,
+    "train_split": 0.8,
+    "val_split": 0.1,
+    "hidden_size": 128,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "bidirectional": false,
+    "batch_size": 64,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "early_stopping_patience": 5,
+    "input_dim": 7,
+    "output_dim": 3
+  },
+  "training_time": 703.9491312503815,
+  "best_epoch": 7,
+  "best_val_loss": 0.006002190513517092,
+  "test_loss": 0.007194316680620093,
+  "test_metrics": {
+    "temperature": {
+      "mse": 0.0022133588790893555,
+      "mae": 0.035299647599458694,
+      "rmse": 0.04704634820142107
+    },
+    "relative_humidity": {
+      "mse": 0.010203714482486248,
+      "mae": 0.07206302881240845,
+      "rmse": 0.10101343713826516
+    },
+    "wind_speed_10m (km/h)": {
+      "mse": 0.009165083989501,
+      "mae": 0.07330696284770966,
+      "rmse": 0.09573444515690786
+    }
+  },
+  "horizon_metrics": {
+    "6": {
+      "temperature": 0.0013261629501357675,
+      "relative_humidity": 0.005141684785485268,
+      "wind_speed_10m (km/h)": 0.005755817983299494
+    },
+    "12": {
+      "temperature": 0.0014879778027534485,
+      "relative_humidity": 0.006247371435165405,
+      "wind_speed_10m (km/h)": 0.006535746622830629
+    },
+    "24": {
+      "temperature": 0.001584306126460433,
+      "relative_humidity": 0.007168003357946873,
+      "wind_speed_10m (km/h)": 0.007072461303323507
+    },
+    "48": {
+      "temperature": 0.0019185959827154875,
+      "relative_humidity": 0.008819413371384144,
+      "wind_speed_10m (km/h)": 0.008289169520139694
+    },
+    "72": {
+      "temperature": 0.0022133588790893555,
+      "relative_humidity": 0.010203714482486248,
+      "wind_speed_10m (km/h)": 0.009165083989501
+    }
+  }
+}

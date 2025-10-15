@@ -1,0 +1,22 @@
+{
+  "features": [
+    "temperature",
+    "relative_humidity",
+    "wind_speed_10m (km/h)"
+  ],
+  "min_values": [
+    7.1,
+    6.0,
+    0.0
+  ],
+  "max_values": [
+    41.7,
+    100.0,
+    43.3
+  ],
+  "ranges": [
+    34.6,
+    94.0,
+    43.3
+  ]
+}

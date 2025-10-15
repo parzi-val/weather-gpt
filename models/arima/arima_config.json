@@ -1,0 +1,32 @@
+{
+  "data_path": "/content/Weather_Data_1980_2024(hourly).csv",
+  "models_dir": "/content/models",
+  "target_variables": [
+    "temperature",
+    "relative_humidity",
+    "wind_speed_10m (km/h)"
+  ],
+  "input_features": [
+    "temperature",
+    "relative_humidity",
+    "dew_point",
+    "wind_speed_10m (km/h)",
+    "pressure_msl (hPa)",
+    "cloud_cover (%)",
+    "vapour_pressure_deficit (kPa)"
+  ],
+  "train_split": 0.8,
+  "val_split": 0.1,
+  "forecast_horizon": 72,
+  "auto_arima_params": {
+    "max_p": 5,
+    "max_d": 2,
+    "max_q": 5,
+    "seasonal": false,
+    "stepwise": true,
+    "suppress_warnings": true,
+    "error_action": "ignore",
+    "trace": true,
+    "n_jobs": -1
+  }
+}
