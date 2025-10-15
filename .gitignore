@@ -1,87 +1,43 @@
-# Python cache & virtual environments
+# Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
 *.so
-*.egg-info/
-.env
-.venv/
-venv/
+.Python
 env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# OS files
+# Environment
+.env
+*.log
+
+# Large model files
+*.pkl
+*.pth
+
+# But keep model results
+!models/**/results.json
+!models/**/*_results.json
+!models/**/*_config.json
+!models/**/*.png
+
+# OS
 .DS_Store
 Thumbs.db
 
-# VSCode project settings
-.vscode/
-
-# Log files
-*.log
-
-# Environment and credentials
-*.env
-*.key
-*.pem
-*.crt
-*.cert
-*.cfg
-config.json
-
-.venv/
-
-# Datasets
-*.csv
-*.xlsx
-*.xls
-*.jsonl
-
-# Checkpoints & models
-checkpoints/
-*.pth
-*.pt
-*.h5
-*.ckpt
-
-# Plot outputs
-*.png
-*.jpg
-*.jpeg
-*.svg
-
-# Temporary or runtime files
-*.bak
-*.tmp
-*.swp
-
-# Compiled files
-*.exe
-*.out
-
-# FastAPI cache/static artifacts
-api/static/__pycache__/
-api/__pycache__/
-api/templates/__pycache__/
-
-# Deployment (optional)
-*.docker
-*.tar
-*.zip
-*.tar.gz
-
-# PyCharm / JetBrains
-.idea/
-
-# Local backups
-*.old
-*.orig
-*.csv
-
-
+# Node
 node_modules/
-package-lock.json
-CLAUDE.md
+
+# Claude
+.claude/
